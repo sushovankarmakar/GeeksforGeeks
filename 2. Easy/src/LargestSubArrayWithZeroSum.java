@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1
+// // https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k/0 (Similar one)
 
 public class LargestSubArrayWithZeroSum {
 	public static void main(String[] args) throws IOException {

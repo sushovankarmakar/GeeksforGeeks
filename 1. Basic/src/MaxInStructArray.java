@@ -1,5 +1,3 @@
-package basic;
-
 // https://practice.geeksforgeeks.org/problems/maximum-in-struct-array/1
 
 

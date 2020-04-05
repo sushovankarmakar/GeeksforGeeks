@@ -5,8 +5,9 @@ import java.util.Arrays;
 
 // https://ide.geeksforgeeks.org/QfXZELSri2
 // https://www.geeksforgeeks.org/find-four-numbers-with-sum-equal-to-given-sum/
+// Previously this class was named as FourElements 
 
-class FourElements {
+class FourElementsWithSumToGivenSum {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

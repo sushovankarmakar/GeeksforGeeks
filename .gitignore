@@ -6,3 +6,4 @@
 *.class
 *.prefs
 /bin/*
+/bin/

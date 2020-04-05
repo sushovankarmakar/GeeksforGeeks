@@ -1,5 +1,3 @@
-package easy;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.HashMap;
@@ -9,7 +7,7 @@ import java.io.IOException;
 // https://practice.geeksforgeeks.org/problems/largest-subarray-of-0s-and-1s/1/
 
 public class LargestSubArrayOf0s1s {
-	public static void main() throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine().trim());
 		while( t--> 0 ) {

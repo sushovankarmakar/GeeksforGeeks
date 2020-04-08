@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+
+// https://ide.geeksforgeeks.org/i8TJRLyL8H
+// https://practice.geeksforgeeks.org/problems/power-set/0
+
 public class PowerSet {
 
 	public static void main(String[] args) throws IOException {

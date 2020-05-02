@@ -5,29 +5,31 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 // https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
-// https://practice.geeksforgeeks.org/problems/preorder-traversal/1/
+// https://practice.geeksforgeeks.org/problems/inorder-traversal/1
 
-public class Tree_BinaryTreePreorderTraversal {
+public class Tree_BinaryTreeInOrderTraversal {
 	
 	static class Tree {
-		void printPreOrder(Node root) {
+		void printInOrder(Node root) {
 			if(root == null) return;
-			System.out.print(root.data + " ");
-			printPreOrder(root.left);
-			printPreOrder(root.right);
+			printInOrder(root.left);
+			System.out.print(root.data+ " ");
+			printInOrder(root.right);
 		}
 	}
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine().trim());
+		
 		while(t-->0) {
 			String s = br.readLine().trim();
 			Node root = buildTree(s);
 			Tree tree = new Tree();
-			tree.printPreOrder(root);
+			tree.printInOrder(root);
 			System.out.println("\n");
 		}
+
 	}
 	
 	private static Node buildTree(String str) {
@@ -46,15 +48,15 @@ public class Tree_BinaryTreePreorderTraversal {
 			
 			String currVal = ip[i];
 			
-			if(!currVal.equals("N")) {
+			if (!currVal.equals("N")) {
 				currNode.left = new Node(Integer.parseInt(currVal));
 				queue.add(currNode.left);
 			}
-			i++;
 			
+			i++;
 			if(i >= ip.length) break;
 			
-			currVal = ip[i]; 
+			currVal = ip[i];
 			
 			if(!currVal.equals("N")) {
 				currNode.right = new Node(Integer.parseInt(currVal));
@@ -75,5 +77,3 @@ public class Tree_BinaryTreePreorderTraversal {
 		}
 	}
 }
-
-

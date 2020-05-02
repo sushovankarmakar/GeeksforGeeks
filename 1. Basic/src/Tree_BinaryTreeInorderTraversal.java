@@ -4,6 +4,9 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+// https://practice.geeksforgeeks.org/problems/inorder-traversal/1
+
 class Tree {
 	void printInOrder(Node root) {
 		if(root == null) return;

@@ -18,7 +18,7 @@ public class Tree_LevelOrderTraversal {
 			
 			while(queue.size() > 0) {
 				Node currNode = queue.poll();
-				System.out.println(currNode.data + " ");
+				System.out.print(currNode.data + " ");
 				if(currNode.left != null) queue.add(currNode.left);
 				if(currNode.right != null) queue.add(currNode.right);
 			}

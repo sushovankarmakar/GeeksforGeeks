@@ -4,24 +4,14 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-// https://www.geeksforgeeks.org/level-order-tree-traversal/
-// https://practice.geeksforgeeks.org/problems/level-order-traversal/1/
+// https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1
+// https://www.geeksforgeeks.org/write-a-c-program-to-find-the-maximum-depth-or-height-of-a-tree/
 
-public class Tree_LevelOrderTraversal {
-	
+public class Tree_HeightOfBinaryTree {
 	static class Tree {
-		void levelOrderTraversal(Node root) {
-			if(root == null) return;
-			
-			Queue<Node> queue = new LinkedList<>();
-			queue.add(root);
-			
-			while(queue.size() > 0) {
-				Node currNode = queue.poll();
-				System.out.println(currNode.data + " ");
-				if(currNode.left != null) queue.add(currNode.left);
-				if(currNode.right != null) queue.add(currNode.right);
-			}
+		int getHeight(Node root) {
+			if(root == null) return 0;
+			return Math.max(getHeight(root.left), getHeight(root.right)) + 1;
 		}
 	}
 
@@ -32,8 +22,8 @@ public class Tree_LevelOrderTraversal {
 			String s = br.readLine().trim();
 			Node root = buildTree(s);
 			Tree tree = new Tree();
-			tree.levelOrderTraversal(root);
-			System.out.println("\n");
+			int height = tree.getHeight(root);
+			System.out.println(height);
 		}
 	}
 	

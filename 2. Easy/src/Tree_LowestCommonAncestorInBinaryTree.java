@@ -60,6 +60,8 @@ public class Tree_LowestCommonAncestorInBinaryTree {
 			}
 			i++;
 			
+			if(i >= ip.length) break;
+			
 			currVal = ip[i];
 			
 			if(!currVal.equals("N")) {

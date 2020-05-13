@@ -6,6 +6,8 @@ import java.util.Queue;
 
 // https://practice.geeksforgeeks.org/problems/root-to-leaf-path-sum/1
 // https://www.geeksforgeeks.org/root-to-leaf-path-sum-equal-to-a-given-number/
+// https://www.youtube.com/watch?v=Jg4E4KZstFE
+// https://backtobackswe.com/platform/content/sum-root-to-leaf-paths/video
 
 public class Tree_RootToLeafPathSum {
 	

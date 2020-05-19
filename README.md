@@ -2,6 +2,7 @@
 Java solutions to all the problems solved by myself in GeeksForGeeks website. Keeping a daily dairy about problem solving.
 https://www.geeksforgeeks.org/ 
 
+* **17.05.2020** : 	[Insert a node in a BST](https://practice.geeksforgeeks.org/problems/insert-a-node-in-a-bst/1) (*Easy*)
 * **18.05.2020** : 	[Left View of Binary Tree](https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1) (*Easy*), 
 					[Sum of Left Leaf Nodes](https://practice.geeksforgeeks.org/problems/sum-of-leaf-nodes/1) (*Easy*)
 * **17.05.2020** : 	[Connect Nodes at Same Level](https://practice.geeksforgeeks.org/problems/connect-nodes-at-same-level/1/) (*Medium*)

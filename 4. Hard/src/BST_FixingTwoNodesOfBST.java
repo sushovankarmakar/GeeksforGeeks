@@ -3,7 +3,7 @@ import java.util.Scanner;
 // https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1
 // https://www.geeksforgeeks.org/fix-two-swapped-nodes-of-bst/
 
-public class Tree_FixingTwoNodesOfBST {
+public class BST_FixingTwoNodesOfBST {
 
 	static Node node1, node2, prev;
 

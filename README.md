@@ -2,7 +2,8 @@
 Java solutions to all the problems solved by myself in GeeksForGeeks website. Keeping a daily dairy about problem solving.
 https://www.geeksforgeeks.org/ 
 
-* **23.05.2020** : 	[Fixing Two nodes of a BST](https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1) (*Hard*)
+* **23.05.2020** : 	[Fixing Two nodes of a BST](https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1) (*Hard*), 
+					[Check for BST](https://practice.geeksforgeeks.org/problems/check-for-bst/1) (*Medium*)
 * **21.05.2020** : 	[Exchange the Leaf Nodes](https://practice.geeksforgeeks.org/problems/exchange-the-leaf-nodes/1) (*Easy*)
 * **20.05.2020** : 	[Delete a node from BST](https://practice.geeksforgeeks.org/problems/delete-a-node-from-bst/1/) (*Medium*),
 					[Minimum element in BST](https://practice.geeksforgeeks.org/problems/minimum-element-in-bst/1/) (*Basic*)

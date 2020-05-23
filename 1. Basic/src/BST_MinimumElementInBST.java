@@ -36,7 +36,7 @@ public class BST_MinimumElementInBST {
 		queue.add(root);
 		
 		int i = 1;
-		while(queue.size() > 0 && i < ip.length) {
+		while(queue.isEmpty() && i < ip.length) {
 			Node currNode = queue.poll();
 			
 			String currData = ip[i];
@@ -61,7 +61,8 @@ public class BST_MinimumElementInBST {
 	
 	private static class Node {
 		private int data;
-		private Node left, right;
+		private Node left;
+		private Node right;
 		Node(int data) {
 			this.data = data;
 			left = right = null;

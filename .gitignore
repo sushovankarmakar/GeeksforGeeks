@@ -7,3 +7,5 @@
 *.prefs
 /bin/*
 /bin/
+.idea/
+.iml

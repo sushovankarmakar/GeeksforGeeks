@@ -10,7 +10,7 @@ import java.util.Queue;
 
 public class BST_CheckForBST {
 	
-	private boolean isBST(Node root, int lowerLimit, int upperLimit) {
+	private static boolean isBST(Node root, int lowerLimit, int upperLimit) {
 		if(root == null) return true;
 		if((lowerLimit < root.data) && (root.data < upperLimit)) {
 			if(isBST(root.left, lowerLimit, root.data) && isBST(root.right, root.data, upperLimit)) {
@@ -25,35 +25,39 @@ public class BST_CheckForBST {
 		int t = Integer.parseInt(br.readLine());
 		while(t-->0) {
 			String ip = br.readLine().trim();
-			BST_CheckForBST obj = new BST_CheckForBST();
-			Node root = obj.buildTree(ip);
-			System.out.println(obj.isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE)? "1" : "0");
+			Node root = buildTree(ip);
+			System.out.println(isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE)? "1" : "0");
 		}
 	}
-	
-	private Node buildTree(String str) {
-		if(str.length()==0 || str.charAt(0)=='N') return null;
-		
-		Queue<Node> queue = new LinkedList<>();
-		String[] ip = str.split("\\s+");
+
+
+
+	private static Node buildTree(String str) {
+		if(str.length()==0 || str.charAt(0)=='N') {
+			return null;
+		}
+		String ip[] = str.split("\\s+");
 		Node root = new Node(Integer.parseInt(ip[0]));
+		Queue<Node> queue = new LinkedList<>();
 		queue.add(root);
-		
+
 		int i = 1;
-		while(queue.isEmpty() && i < ip.length) {
-			
-			Node currNode = queue.poll();
+		while(queue.size() > 0 && i < ip.length) {
+			Node currNode = queue.peek();
+			queue.remove();
+
 			String currVal = ip[i];
-			
-			if(!currVal.equals("N")) {
+
+			if (!currVal.equals("N")) {
 				currNode.left = new Node(Integer.parseInt(currVal));
 				queue.add(currNode.left);
 			}
+
 			i++;
-			
 			if(i >= ip.length) break;
-			
+
 			currVal = ip[i];
+
 			if(!currVal.equals("N")) {
 				currNode.right = new Node(Integer.parseInt(currVal));
 				queue.add(currNode.right);
@@ -63,7 +67,7 @@ public class BST_CheckForBST {
 		return root;
 	}
 	
-	class Node {
+	private static class Node {
 		private int data;
 		private Node left; 
 		private Node right;

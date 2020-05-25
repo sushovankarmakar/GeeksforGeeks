@@ -2,6 +2,7 @@
 Java solutions to all the problems solved by myself in GeeksForGeeks website. Keeping a daily dairy about problem solving.
 https://www.geeksforgeeks.org/ 
 
+* **25.05.2020** : 	[Inorder Successor in BST](https://practice.geeksforgeeks.org/problems/inorder-successor-in-bst/1) (*Easy*)
 * **24.05.2020** : 	[Product array puzzle](https://practice.geeksforgeeks.org/problems/product-array-puzzle/0) (*Easy*)
 * **23.05.2020** : 	[Fixing Two nodes of a BST](https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1) (*Hard*), 
 					[Check for BST](https://practice.geeksforgeeks.org/problems/check-for-bst/1) (*Medium*)

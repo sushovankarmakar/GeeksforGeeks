@@ -3,7 +3,7 @@ Java solutions to all the problems solved by myself in GeeksForGeeks website. Ke
 https://www.geeksforgeeks.org/ 
 
 * **30.05.2020** : 	[Reverse a linked list](https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/LL_ReverseLinkedList.java),
-					[Print Linked List elements](https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1) (*Basic*) : [Solution]()
+					[Print Linked List elements](https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1) (*Basic*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/1.%20Basic/src/LL_PrintLinkedList.java)
 * **25.05.2020** : 	[Inorder Successor in BST](https://practice.geeksforgeeks.org/problems/inorder-successor-in-bst/1) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/BST_InorderSuccessorInBST.java)
 * **24.05.2020** : 	[Product array puzzle](https://practice.geeksforgeeks.org/problems/product-array-puzzle/0) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/ArraysMathematical_ProductArrayPuzzle.java)
 * **23.05.2020** : 	[Fixing Two nodes of a BST](https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1) (*Hard*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/4.%20Hard/src/BST_FixingTwoNodesOfBST.java), 

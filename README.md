@@ -2,7 +2,8 @@
 Java solutions to all the problems solved by myself in GeeksForGeeks website. Keeping a daily dairy about problem solving.
 https://www.geeksforgeeks.org/ 
 
-* **07.06.2020** : 	[Detect Loop in linked list](https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1/) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/LL_DetectLoopInLinkedList.java)
+* **07.06.2020** : 	[Detect Loop in linked list](https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1/) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/LL_DetectLoopInLinkedList.java),
+					[Remove loop in Linked List](https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1/) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/LL_RemoveLoopInLinkedList.java)
 * **30.05.2020** : 	[Reverse a linked list](https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/LL_ReverseLinkedList.java),
 					[Print Linked List elements](https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1) (*Basic*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/1.%20Basic/src/LL_PrintLinkedList.java)
 * **25.05.2020** : 	[Inorder Successor in BST](https://practice.geeksforgeeks.org/problems/inorder-successor-in-bst/1) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/BST_InorderSuccessorInBST.java)

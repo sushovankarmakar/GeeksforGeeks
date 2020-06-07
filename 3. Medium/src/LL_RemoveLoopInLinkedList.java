@@ -2,10 +2,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-// https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1/
+// https://www.youtube.com/watch?v=_BG9rjkAXj8&feature=emb_logo
+// https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1/
 // https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/
+// https://www.youtube.com/watch?v=-YiQZi3mLq0
 
-public class LL_DetectLoopInLinkedList {
+public class LL_RemoveLoopInLinkedList {
 
     private static int detectLoop(Node head) {
         Node slowPointer = head, fastPointer = head;
@@ -13,10 +15,37 @@ public class LL_DetectLoopInLinkedList {
             slowPointer = slowPointer.next;
             fastPointer = fastPointer.next.next;
 
-            if(slowPointer == fastPointer) return 1;
+            if(slowPointer == fastPointer) {
+                removeLoop(slowPointer, head);
+                return 1;
+            }
         }
         return 0;
     }
+    private static void removeLoop(Node slowPointer, Node head) {
+        Node pointer1 = head;
+        Node pointer2 = slowPointer;
+
+        while(pointer1.next != pointer2.next) {
+            pointer1 = pointer1.next;
+            pointer2 = pointer2.next;
+        }
+        pointer2.next = null;
+    }
+
+    // with extra space.
+    /*public static void removeLoop(Node head){
+        Set<Node> set = new HashSet<>();
+        while(head != null) {
+            if(set.contains(head.next)) {
+                head.next = null;
+                return;
+            }
+            set.add(head);
+            head = head.next;
+        }
+        return;
+    }*/
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -32,7 +61,22 @@ public class LL_DetectLoopInLinkedList {
             Node head = buildLinkedList(ip);
             if(0 < x ) createLoop(head, x);
             System.out.println(detectLoop(head) == 1 ? "True" : "False");
+            printLinkedList(head);
         }
+    }
+
+    private static void printLinkedList(Node head) {
+        StringBuffer sb = new StringBuffer();
+
+        Node temp = head;
+
+        while(temp != null) {
+            sb.append(temp.value + " ");
+            temp = temp.next;
+        }
+
+        System.out.println(sb);
+        sb.setLength(0);
     }
 
     private static Node buildLinkedList(int[] ip) {
@@ -58,8 +102,10 @@ public class LL_DetectLoopInLinkedList {
             head = head.next;
             i++;
         }
-        tail.next = loopStartingNode;
-        return;
+
+        if(tail != null) {
+            tail.next = loopStartingNode;
+        }
     }
 
     static class Node {

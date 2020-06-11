@@ -2,6 +2,8 @@
 Java solutions to all the problems solved by myself in GeeksForGeeks website. Keeping a daily dairy about problem solving.
 https://www.geeksforgeeks.org/
 
+
+* **11.06.2020** : 	[Count Occurences of Anagrams](https://practice.geeksforgeeks.org/problems/count-occurences-of-anagrams/0) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/SlidingWin_CountOccurrencesOfAnagrams.java)
 * **10.06.2020** : 	[Longest K unique characters substring](https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring/0) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/SlidingWin_LongestKUniqueCharsSubStr.java)
 * **09.06.2020** : 	[Length Unsorted Subarray](https://practice.geeksforgeeks.org/problems/length-unsorted-subarray/0) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/Array_LengthUnsortedSubArray.java)
 * **08.06.2020** : 	[Reverse a Linked List in groups of given size](https://practice.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/LL_ReverseLinkedListGroupsOfSizeK.java)

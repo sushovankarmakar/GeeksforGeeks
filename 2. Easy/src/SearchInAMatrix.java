@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 
 public class SearchInAMatrix {
 
+    // time complexity : O(log(n))   // n is number of rows.
     private static boolean searchInMatrix(int[][] matrix, int target) {
         if(matrix == null || matrix.length == 0) return false;
 

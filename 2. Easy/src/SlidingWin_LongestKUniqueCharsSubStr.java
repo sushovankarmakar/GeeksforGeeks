@@ -9,7 +9,7 @@ import java.util.Map;
 // https://www.programcreek.com/2013/02/longest-substring-which-contains-2-unique-characters/
 // https://www.youtube.com/watch?v=KqXKT-QlCwY&t=3s
 // https://www.youtube.com/watch?v=8AQra0p_HmI
-
+// https://leetcode.com/problems/fruit-into-baskets/submissions/ (same problem)
 
 public class SlidingWin_LongestKUniqueCharsSubStr {
     public static void main(String[] args) throws IOException {

@@ -2,6 +2,8 @@
 Java solutions to all the problems solved by myself in GeeksForGeeks website. Keeping a daily dairy about problem solving.
 https://www.geeksforgeeks.org/
 
+* **13.06.2020** : 	[Search in a matrix](https://practice.geeksforgeeks.org/problems/search-in-a-matrix/0) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/SearchInAMatrix.java)
+
 * **12.06.2020** : 	[Length of the longest substring](https://practice.geeksforgeeks.org/problems/length-of-the-longest-substring/0) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/SlidingWin_LenOfLongestSubstringNoRepChars.java) ||
 					[Search in a Rotated Array](https://practice.geeksforgeeks.org/problems/search-in-a-rotated-array/0) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/SearchInRotatedArray.java) 
 * **11.06.2020** : 	[Count Occurences of Anagrams](https://practice.geeksforgeeks.org/problems/count-occurences-of-anagrams/0) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/SlidingWin_CountOccurrencesOfAnagrams.java)

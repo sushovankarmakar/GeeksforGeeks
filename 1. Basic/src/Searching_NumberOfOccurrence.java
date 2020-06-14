@@ -37,7 +37,7 @@ class Searching_NumberOfOccurrence {
 		}
 	}
 
-	// https://www.geeksforgeeks.org/first-strictly-smaller-element-in-a-sorted-array-in-java/
+	// https://www.geeksforgeeks.org/first-strictly-greater-element-in-a-sorted-array-in-java/
 	// https://www.geeksforgeeks.org/first-strictly-smaller-element-in-a-sorted-array-in-java/
 	// https://www.youtube.com/watch?v=dVXy6hmE_0U
 	// above links are very helpful/similar to understand the below solution

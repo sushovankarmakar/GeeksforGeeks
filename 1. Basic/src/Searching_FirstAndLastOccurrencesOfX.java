@@ -3,7 +3,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 // https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x/0
-// https://www.geeksforgeeks.org/find-first-and-last-positions-of-an-element-in-a-sorted-array/
 // https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/
 
 
@@ -134,6 +133,8 @@ class Searching_FirstAndLastOccurrencesOfX {
 }*/
 
 /*
+// below approach is follow this link
+// https://www.geeksforgeeks.org/find-first-and-last-positions-of-an-element-in-a-sorted-array/
 
 class Searching_FirstAndLastOccurrencesOfX {
 

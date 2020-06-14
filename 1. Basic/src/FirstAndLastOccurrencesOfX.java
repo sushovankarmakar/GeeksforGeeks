@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 // one function call approach
 // https://www.youtube.com/watch?v=dVXy6hmE_0U (Good Video Explanation) <- this approach is followed in below solution
 // https://www.geeksforgeeks.org/first-strictly-greater-element-in-a-sorted-array-in-java/
-class FirstAndLastOccurrencesOfX {
+class Searching_FirstAndLastOccurrencesOfX {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -64,7 +64,7 @@ class FirstAndLastOccurrencesOfX {
 // https://www.youtube.com/watch?v=OE7wUUpJw6I
 // https://www.youtube.com/watch?v=bU-q1OJ0KWw
 
-/*class FirstAndLastOccurrencesOfX {
+/*class Searching_FirstAndLastOccurrencesOfX {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine().trim());
@@ -135,7 +135,7 @@ class FirstAndLastOccurrencesOfX {
 
 /*
 
-class FirstAndLastOccurrencesOfX {
+class Searching_FirstAndLastOccurrencesOfX {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

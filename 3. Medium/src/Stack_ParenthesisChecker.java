@@ -6,7 +6,7 @@ import java.util.Stack;
 // https://practice.geeksforgeeks.org/problems/parenthesis-checker/0
 // https://leetcode.com/problems/valid-parentheses/discuss/9178/Short-java-solution
 
-class ParenthesisChecker {
+class Stack_ParenthesisChecker {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine().trim());

@@ -33,6 +33,7 @@ class ParenthesisChecker {
 		return stack.isEmpty();
 	}
 
+// OLD SOLUTION
 /*
 	public static void main(String[] args) throws IOException
 	{

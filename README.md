@@ -2,6 +2,7 @@
 Java solutions to all the problems solved by myself in GeeksForGeeks website. Keeping a daily dairy about problem solving.
 https://www.geeksforgeeks.org/
 
+* **24.06.2020** : 	[ZigZag Tree Traversal](https://practice.geeksforgeeks.org/problems/zigzag-tree-traversal/1) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/Tree_ZigZagBinaryTreeTraversal.java)
 * **23.06.2020** : 	[Next larger element](https://practice.geeksforgeeks.org/problems/next-larger-element/0) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Stack_NextLargerElement.java)
 * **22.06.2020** : 	[Parenthesis Checker](https://practice.geeksforgeeks.org/problems/parenthesis-checker/0) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Stack_ParenthesisChecker.java)
 * **16.06.2020** : 	[Delete Linked List node at given position](https://practice.geeksforgeeks.org/problems/delete-a-node-in-single-linked-list/1) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/LL_DeleteSingleLLNodeAtGivenPos.java) || [Delete without head pointer](https://practice.geeksforgeeks.org/problems/delete-without-head-pointer/1) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/LL_DeleteLLNodeWithoutHeadPointer.java)

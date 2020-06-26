@@ -2,6 +2,7 @@
 Java solutions to all the problems solved by myself in GeeksForGeeks website. Keeping a daily dairy about problem solving.
 https://www.geeksforgeeks.org/
 
+* **25.06.2020** : 	[Anagram Palindrome](https://practice.geeksforgeeks.org/problems/anagram-palindrome/0) (*Basic*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/1.%20Basic/src/Hash_AnagramPalindrome.java)
 * **24.06.2020** : 	[ZigZag Tree Traversal](https://practice.geeksforgeeks.org/problems/zigzag-tree-traversal/1) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/Tree_ZigZagBinaryTreeTraversal.java) || [Nth node of linked list](https://practice.geeksforgeeks.org/problems/node-at-a-given-index-in-linked-list/1) (*Basic*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/Tree_ZigZagBinaryTreeTraversal.java)
 * **23.06.2020** : 	[Next larger element](https://practice.geeksforgeeks.org/problems/next-larger-element/0) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Stack_NextLargerElement.java)
 * **22.06.2020** : 	[Parenthesis Checker](https://practice.geeksforgeeks.org/problems/parenthesis-checker/0) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Stack_ParenthesisChecker.java)

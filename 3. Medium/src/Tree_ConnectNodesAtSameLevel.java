@@ -33,7 +33,25 @@ public class Tree_ConnectNodesAtSameLevel {
 			}
 		}
 	}*/
-	
+
+	//https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+	// below solution is only for PERFECT BINARY TREE
+	public TreeNode connectNodesAtSameLevelForPerfectBinaryTree(TreeNode root) {
+		if(root == null) return null;
+		connectRightNextNode(root.left, root.right);
+		return root;
+	}
+
+	private void connectRightNextNode(TreeNode node1, TreeNode node2) {
+		if(node1 == null) return;
+
+		node1.nextRight = node2;
+
+		connectRightNextNode(node1.left, node1.right);
+		connectRightNextNode(node2.left, node2.right);
+		connectRightNextNode(node1.right, node2.left);
+	}
+
 	// https://www.geeksforgeeks.org/connect-nodes-at-same-level-with-o1-extra-space/
 	// with no extra space, time : O(n) , space : O(1)
 	public static void connectNodesAtSameLevel(TreeNode root){
@@ -79,7 +97,6 @@ public class Tree_ConnectNodesAtSameLevel {
         
         return null;
     }
-	
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -101,8 +118,7 @@ public class Tree_ConnectNodesAtSameLevel {
 		}
 	}
 	
-	private static void printSpecial(TreeNode root)
-    {
+	private static void printSpecial(TreeNode root) {
        if (root == null)
          return;
     
@@ -122,8 +138,7 @@ public class Tree_ConnectNodesAtSameLevel {
        
        printSpecial(next_root);
     }
-	
-	
+
 	static void printLevelOrder(TreeNode root) {
 		if(root == null) return;
 		Queue<TreeNode> queue = new LinkedList<>();

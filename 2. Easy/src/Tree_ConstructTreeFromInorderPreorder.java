@@ -10,6 +10,8 @@ import java.util.Map;
 // https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 // https://www.youtube.com/watch?v=FBpQEQkQ1No
 
+// time complexity : O(n),  space complexity : O(n) due to hashmap
+
 public class Tree_ConstructTreeFromInorderPreorder {
 	
 	static Map<Integer, Integer> inOrderValueIndicesMap = new HashMap<>();

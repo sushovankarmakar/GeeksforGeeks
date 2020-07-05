@@ -3,11 +3,14 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 
-class PrintAdjacencyList {
+// https://practice.geeksforgeeks.org/problems/print-adjacency-list/0
+// https://www.geeksforgeeks.org/graph-and-its-representations/
+
+class Graph_PrintAdjacencyList {
 
 	static class Graph {
 		int v;
-		LinkedList<Integer> adjListArray[];
+		LinkedList<Integer>[] adjListArray;
 		Graph(int v){
 			this.v = v;
 			adjListArray = new LinkedList[v];
@@ -37,11 +40,11 @@ class PrintAdjacencyList {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine().trim());
 		while(t-->0) {
-			String ve[] = br.readLine().trim().split("\\s+");
+			String[] ve = br.readLine().trim().split("\\s+");
 			int v = Integer.parseInt(ve[0]), e = Integer.parseInt(ve[1]);
 			Graph graph = new Graph(v);
 			while(e-->0) {
-				String ip[] = br.readLine().trim().split("\\s+");
+				String[] ip = br.readLine().trim().split("\\s+");
 				int src = Integer.parseInt(ip[0]), dest = Integer.parseInt(ip[1]); 
 				addEdge(graph, src, dest);
 			}

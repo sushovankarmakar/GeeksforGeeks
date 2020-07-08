@@ -6,6 +6,7 @@ import java.util.List;
 
 // https://thecodingsimplified.com/check-if-undirected-graph-is-connected/
 // https://www.geeksforgeeks.org/graph-and-its-representations/
+// https://algorithms.tutorialhorizon.com/check-if-given-undirected-graph-is-connected-or-not/
 
 public class Graph_CheckIfUndirectedGraphIsConnected {
 

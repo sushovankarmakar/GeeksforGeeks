@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+// https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1
+// https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+// https://www.youtube.com/watch?v=60yo4vvRU5s
+
 class Graph_BFSTraversalOfGraph {
 
 	private static List<Integer> bfs(List<List<Integer>> adjList, int noOfVertexes) {

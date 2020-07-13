@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 public class Backtracking_NQueenProblem {
     private static int N = 0;
     private static StringBuilder output = new StringBuilder();
-    private static String printTheBoard = "";
+    private static StringBuilder printTheBoard = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -23,6 +23,7 @@ public class Backtracking_NQueenProblem {
             System.out.println((output.length() == 0) ? -1 : output);
             output.setLength(0);
             System.out.println(printTheBoard);
+            printTheBoard.setLength(0);
         }
     }
 
@@ -67,11 +68,11 @@ public class Backtracking_NQueenProblem {
         // below code prints the whole board
         for (int row = 0; row < N; row++) {
             for (int col = 0; col < N; col++) {
-                printTheBoard += board[row][col];
+                printTheBoard.append(board[row][col]);
             }
-            printTheBoard += "\n";
+            printTheBoard.append("\n");
         }
-        printTheBoard += "\n";
+        printTheBoard.append("\n");
 
         // below code only prints the row col number of the board
         output.append("[");

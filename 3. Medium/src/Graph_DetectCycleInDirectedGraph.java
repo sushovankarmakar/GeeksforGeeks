@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.HashSet;
 
 
-class DetectCycleInDirectedGraph {
+class Graph_DetectCycleInDirectedGraph {
 
 	static class Graph {
 		int v;

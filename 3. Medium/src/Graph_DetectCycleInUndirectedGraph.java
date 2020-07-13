@@ -6,6 +6,7 @@ import java.util.*;
 // 13.07.2020
 // https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1
 // https://www.youtube.com/watch?v=6ZRhq2oFCuo (a video explanation)
+// https://www.youtube.com/watch?v=n_t0a_8H8VY
 
 /* IDEA :
  For every vertex 'V',
@@ -15,8 +16,8 @@ import java.util.*;
 
 class Graph_DetectCycleInUndirectedGraph {
 
-	static boolean isCyclic(Graph graph) {
-		boolean[] visited = new boolean[graph.vertex];
+	private static boolean isCyclic(Graph graph) {
+		boolean[] isVisited = new boolean[graph.vertex];
 
 		/*  this graph can be disconnected graph,
 			so to cover all the nodes of the graph, we are running this for loop
@@ -24,8 +25,8 @@ class Graph_DetectCycleInUndirectedGraph {
 		for (int i = 0; i < graph.vertex; i++) {
 			int sourceNode = i;
 			int parentNode = -1;
-			if(!visited[i]) {
-				if(isCyclicUtil(graph, sourceNode, visited, parentNode)) {
+			if(!isVisited[sourceNode]) {
+				if(isCyclicUtil(graph, isVisited, sourceNode, parentNode)) {
 					return true;
 				}
 			}
@@ -34,11 +35,11 @@ class Graph_DetectCycleInUndirectedGraph {
 	}
 
 	// below function is just a modified DFS algorithm
-	static boolean isCyclicUtil(Graph graph, int sourceNode, boolean[] visited, int parentNode) {
-		visited[sourceNode] = true;
+	private static boolean isCyclicUtil(Graph graph, boolean[] isVisited, int sourceNode, int parentNode) {
+		isVisited[sourceNode] = true;
 		for (int node : graph.adjListArray[sourceNode]) {
-			if (!visited[node]) {
-				if (isCyclicUtil(graph, node, visited, sourceNode)) {
+			if (!isVisited[node]) {
+				if (isCyclicUtil(graph, isVisited, node, sourceNode)) {
 					return true;
 				}
 			} else if (node != parentNode) {

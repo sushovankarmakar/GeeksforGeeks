@@ -8,6 +8,7 @@ import java.util.Queue;
 // https://www.geeksforgeeks.org/diameter-of-a-binary-tree-in-on-a-new-method/ (Followed this O(n) solution)
 // https://www.youtube.com/watch?v=rm2WE0MCJ6k (A good explanation)
 // https://www.youtube.com/watch?v=9bCqmaIY2as (Only the explanation is good)
+// https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/1.%20Basic/src/Tree_HeightOfBinaryTree.java (Similar Problem)
 
 // SPECIAL CASE :
 // Input  : 1 4 5 N N 12 7 N 25 N 8 30 N N 12 N N N 9 N N

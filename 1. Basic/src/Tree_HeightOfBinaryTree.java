@@ -31,13 +31,13 @@ public class Tree_HeightOfBinaryTree {
 		if(str.length() == 0 || str.charAt(0)=='N') {
 			return null;
 		}
-		String ip[] = str.split("\\s+");
+		String[] ip = str.split("\\s+");
 		Node root = new Node(Integer.parseInt(ip[0]));
 		Queue<Node> queue = new LinkedList<>();
 		queue.add(root);
 		
 		int i = 1;
-		while(queue.size() > 0 && i < ip.length) {
+		while(!queue.isEmpty() && i < ip.length) {
 			Node currNode = queue.peek();
 			queue.remove();
 			

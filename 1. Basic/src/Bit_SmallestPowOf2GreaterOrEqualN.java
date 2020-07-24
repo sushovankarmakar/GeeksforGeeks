@@ -46,7 +46,7 @@ class Bit_SmallestPowOf2GreaterOrEqualN {
 		// in the while loop we are decreasing the number until the number is a power of 2.
 
 		while((num & (num-1)) > 0) {
-			num = num & (num-1);
+			num = num & (num-1); // num value gradually decrease, we stop only when we get a value which is a power of 2
 		}
 
 		return (num << 1);	// left shift is same as (num * 2). it doubles the value

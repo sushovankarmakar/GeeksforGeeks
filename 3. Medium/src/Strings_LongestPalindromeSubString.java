@@ -59,7 +59,8 @@ public class Strings_LongestPalindromeSubString {
             String currentPalindromicString = string1.length() > string2.length() ? string1 : string2;
 
             /*if two palindromic substring has same length, then we need to return the first one
-            for that we need to keep tract of the below comparision*/
+            for that we need to keep tract of the below comparision.
+            example : ayaxzfbjbkrxiri has two palindrome. aya, iri. we need to return aya*/
 
             maxLengthPalindromicString = currentPalindromicString.length() > maxLengthPalindromicString.length() ?
                     currentPalindromicString : maxLengthPalindromicString;

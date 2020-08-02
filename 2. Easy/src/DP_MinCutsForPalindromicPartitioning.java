@@ -27,7 +27,7 @@ public class DP_MinCutsForPalindromicPartitioning {
     * APPROACH - 1 : time complexity : O(n^2), space complexity : O(n)
     * TAKE 'banana' as input string and DRY RUN TO UNDERSTAND THE CODE BETTER
     * input string : banana   [b, a, n, a, n, a]
-    * minCuts array :         [1, 0, 1, 0, 1, 0, 0]
+    * minCuts array :         [1, 0, 1, 0, 1, 0]
     * */
 
     private static int getMinNumberOfCutsForPalindromePartitioning2(String str) {

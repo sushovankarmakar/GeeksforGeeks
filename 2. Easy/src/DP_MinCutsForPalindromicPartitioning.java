@@ -28,6 +28,8 @@ public class DP_MinCutsForPalindromicPartitioning {
     * TAKE 'banana' as input string and DRY RUN TO UNDERSTAND THE CODE BETTER
     * input string : banana   [b, a, n, a, n, a]
     * minCuts array :         [1, 0, 1, 0, 1, 0]
+    * output : minCuts[0] which is 1.
+    * so palindromic partitioning will look like this :  b | anana
     * */
 
     private static int getMinNumberOfCutsForPalindromePartitioning2(String str) {

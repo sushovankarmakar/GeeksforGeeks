@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-// https://www.youtube.com/watch?v=rmNK2awrhkU (BEST Video explanation)
+// https://www.youtube.com/watch?v=rmNK2awrhkU (BEST Video explanation, I followed this) 
 // https://practice.geeksforgeeks.org/problems/palindromic-patitioning/0
 // https://leetcode.com/problems/palindrome-partitioning-ii/
 // https://www.youtube.com/watch?v=lDYIvtBVmgo (Good Video, O(n^3) solution)

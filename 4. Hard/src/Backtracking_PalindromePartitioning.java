@@ -6,14 +6,22 @@ import java.util.List;
 
 // https://www.youtube.com/watch?v=4ykBXGbonlA (best video explanation)
 // https://leetcode.com/problems/palindrome-partitioning/
+// https://leetcode.com/problems/palindrome-partitioning-ii/ (Similar Question)
 // https://www.youtube.com/watch?v=A0wENqSIxK4
 // https://leetcode.com/problems/palindrome-partitioning/discuss/41963/Java%3A-Backtracking-solution.
 // https://www.youtube.com/results?search_query=Partition+string+into+palindromes
 // https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/
 // https://www.geeksforgeeks.org/print-palindromic-partitions-string/
+// https://github.com/mission-peace/interview/blob/master/src/com/interview/dynamic/PalindromePartition.java
+// https://practice.geeksforgeeks.org/problems/palindromic-patitioning/0 (Similar Question)
 
 // time complexity : O(n * (2^n))
 // space complexity : O(n)  (call stack)
+
+/*
+* input : nitin
+* output : [ {n, i, t, i, n}, {n, iti, n}, {nitin} ]
+* */
 
 public class Backtracking_PalindromePartitioning {
 

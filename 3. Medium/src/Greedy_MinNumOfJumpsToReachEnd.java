@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 // https://www.geeksforgeeks.org/minimum-number-jumps-reach-endset-2on-solution/
 // https://stackoverflow.com/questions/27858356/how-to-find-minimum-number-of-jumps-to-reach-the-end-of-the-array-in-on-time
 
-// https://leetcode.com/problems/jump-game/ (Similar Problem)
+// https://leetcode.com/problems/jump-game/ (Similar Problem) (To solve this we can use the exact same approach which has been used here)
 
 
 public class Greedy_MinNumOfJumpsToReachEnd {

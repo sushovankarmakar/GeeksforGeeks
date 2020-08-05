@@ -8,6 +8,9 @@ import java.util.Arrays;
 // https://www.youtube.com/watch?v=jgiZlGzXMBw (BEST VIDEO EXPLANATION : I followed this)
 // https://www.youtube.com/watch?v=Y0ZqKpToTic
 
+// https://practice.geeksforgeeks.org/problems/coin-change/0/ (Similar problem)
+// https://leetcode.com/problems/coin-change-2/ (Similar problem)
+
 public class DP_MinNumOfCoinChange {
 
     /* We will solve this using bottom up approach.

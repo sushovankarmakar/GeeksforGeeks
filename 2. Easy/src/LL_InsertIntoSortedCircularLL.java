@@ -5,6 +5,16 @@ import java.io.InputStreamReader;
 // https://practice.geeksforgeeks.org/problems/sorted-insert-for-circular-linked-list/1
 // https://www.youtube.com/watch?v=Gk64fs31T6Q
 
+/*
+* Sample Input:
+* 7
+* 4 5 9 10 0 1 2
+* 7
+*
+* Sample Output
+* 4 5 7 9 10 0 1 2
+* */
+
 public class LL_InsertIntoSortedCircularLL {
 
     private static Node insertIntoSortedCircularLL(Node head, int valueToBeAdded) {

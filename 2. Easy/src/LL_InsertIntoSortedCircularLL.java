@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // https://practice.geeksforgeeks.org/problems/sorted-insert-for-circular-linked-list/1
+// https://www.geeksforgeeks.org/sorted-insert-for-circular-linked-list/ (A good article)
 // https://www.youtube.com/watch?v=Gk64fs31T6Q
 
 /*
@@ -17,12 +18,20 @@ import java.io.InputStreamReader;
 
 public class LL_InsertIntoSortedCircularLL {
 
+    /* There three cases we need to consider.
+    * 1) Linked List is empty
+    * 2) New node is to be inserted just before the head node
+    * 3) New node is to be  inserted somewhere after the head
+    * */
+
     private static Node insertIntoSortedCircularLL(Node head, int valueToBeAdded) {
-        if (head == null) {  /* if head is already null */
+        if (head == null) {  /* if head is already null */  /* 1) Linked List is empty */
             head = new Node(valueToBeAdded);
             head.next = head;
 
-        } else if (valueToBeAdded <= head.data) { /* special case : if valueToBeAdded becomes head */
+        } else if (valueToBeAdded <= head.data) {  /* 2) New node is to be inserted just before the head node */
+
+            /* special case : if valueToBeAdded becomes head */
             Node nodeToBeAdded = new Node(valueToBeAdded);  /* creating nodeToBeAdded */
             nodeToBeAdded.next = head;
 
@@ -34,7 +43,7 @@ public class LL_InsertIntoSortedCircularLL {
             tail.next = nodeToBeAdded;  /* building the link */
             head = nodeToBeAdded;   /* new head */
 
-        } else {
+        } else {    /* 3) New node is to be  inserted somewhere after the head */
             Node currentNode = head;
 
             /* traverse up to that node whose value is just less than the valueToBeAdded */

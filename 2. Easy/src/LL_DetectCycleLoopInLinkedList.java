@@ -2,10 +2,15 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// Floyd's algorithm for cycle detection.
+// https://www.youtube.com/watch?v=_BG9rjkAXj8&feature=emb_logo (Best Video Explanation)
+// https://www.youtube.com/watch?v=-YiQZi3mLq0 (Best Video Explanation with proof)
+// https://www.youtube.com/watch?v=apIw0Opq5nk (Good Proof of the Algo)
 // https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1/
 // https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/
+// https://stackoverflow.com/questions/2936213/explain-how-finding-cycle-start-node-in-cycle-linked-list-work
 
-public class LL_DetectLoopInLinkedList {
+public class LL_DetectCycleLoopInLinkedList {
 
     private static int detectLoop(Node head) {
         Node slowPointer = head, fastPointer = head;

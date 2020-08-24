@@ -2,8 +2,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 24.08.2020
 // https://www.geeksforgeeks.org/make-middle-node-head-linked-list/
 // https://www.youtube.com/watch?v=h69rNQq7sfs (A good video tutorial)
+// https://leetcode.com/problems/middle-of-the-linked-list/ (Similar Question)
+// https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1 (Similar Question)
 
 public class LL_MakeMiddleNodeHeadOfLL {
 

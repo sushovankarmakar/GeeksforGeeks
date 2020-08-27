@@ -73,8 +73,8 @@ public class Arrays_PrisonCellsAfterNDays {
     }
 
     private static int[] getNextDay(int[] cells) {
-        int[] nextDay = new int[cells.length];
-        for(int i = 1; i < cells.length - 1; i++) {
+        int[] nextDay = new int[cells.length];  /* java initialize array values with 0 */
+        for(int i = 1; i < cells.length - 1; i++) {    /* starting from 1 and going upto length-1, cause 0th index value and last index value will always be 0 */
             nextDay[i] = (cells[i - 1] == cells[i + 1]) ? 1: 0;
         }
         return nextDay;

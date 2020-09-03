@@ -2,7 +2,7 @@
 Java solutions to all the problems solved by myself in GeeksForGeeks website. Keeping a daily dairy about problem solving.
 https://www.geeksforgeeks.org/
 
-* **03.09.2020** : 	[Check validity of sudoku](https://leetcode.com/problems/valid-sudoku/) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Arrays_CheckValidityOfSudoku.java)
+* **03.09.2020** : 	[Check validity of sudoku](https://leetcode.com/problems/valid-sudoku/) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Arrays_CheckValidityOfSudoku.java) || [Rat in a Maze](https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Backtracking_RatInAMaze.java)
 * **02.09.2020** : 	[Clone a graph](https://leetcode.com/problems/clone-graph/) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Graph_CloneConnectedUndirectedGraph.java)
 * **01.09.2020** : 	[Clone a Binary Tree with random pointer](https://practice.geeksforgeeks.org/problems/clone-a-binary-tree/1) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Tree_CloneBinaryTreeWithRandomPointer.java)
 * **27.08.2020** : 	[LRU Cache](https://practice.geeksforgeeks.org/problems/lru-cache/1) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/LL_LRUCache.java)

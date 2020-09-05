@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Set;
 
+// https://practice.geeksforgeeks.org/problems/is-sudoku-valid/0/
 // https://leetcode.com/problems/valid-sudoku/
 // https://leetcode.com/problems/valid-sudoku/discuss/15472/Short%2BSimple-Java-using-Strings (I followed this solution)
 // https://www.youtube.com/watch?v=Pl7mMcBm2b8 (BEST Video tutorial)

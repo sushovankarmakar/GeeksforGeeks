@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 // https://www.geeksforgeeks.org/sudoku-backtracking-7/
 // https://leetcode.com/problems/sudoku-solver/discuss/15752/Straight-Forward-Java-Solution-Using-Backtracking/15800 (Most optimal solution)
 
-public class Hard_SudokuSolver {
+public class Backtracking_SudokuSolver {
 
     private static void sudokuSolver(int[][] board) {
         if(board == null || board.length == 0) return;

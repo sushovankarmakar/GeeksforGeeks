@@ -12,32 +12,32 @@ public class Tree_LevelOrderSpiralTraversal {
 	
 	static class Tree {
 		void levelOrderSpiralTraversal(Node root) {
-			if(root == null) return;
+			if (root == null) return;
 			Queue<Node> queue = new LinkedList<>();
 			System.out.print(root.data + " ");
-			if(root.left != null) queue.add(root.left);
-			if(root.right != null) queue.add(root.right);
+			if (root.left != null) queue.add(root.left);
+			if (root.right != null) queue.add(root.right);
 			
 			
 			Stack<Integer> stack = new Stack<Integer>();
 			boolean flip = true;
 			
-			while(!queue.isEmpty()) {
+			while (!queue.isEmpty()) {
 				
 				int nodeCount = queue.size();
 				
-				while(nodeCount > 0) {
+				while (nodeCount > 0) {
 					Node currNode = queue.poll();
 					if(flip) System.out.print(currNode.data + " ");
 					else stack.push(currNode.data);
 					
-					if(currNode.left != null) queue.add(currNode.left);
-					if(currNode.right != null) queue.add(currNode.right);
+					if (currNode.left != null) queue.add(currNode.left);
+					if (currNode.right != null) queue.add(currNode.right);
 					
 					nodeCount--;
 				}
 				flip = !flip;
-				while(!stack.isEmpty()) {
+				while (!stack.isEmpty()) {
 					System.out.print(stack.pop() + " ");
 				}
 			}
@@ -47,7 +47,7 @@ public class Tree_LevelOrderSpiralTraversal {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine().trim());
-		while(t-->0) {
+		while (t-->0) {
 			String s = br.readLine().trim();
 			Node root = buildTree(s);
 			Tree tree = new Tree();
@@ -57,31 +57,31 @@ public class Tree_LevelOrderSpiralTraversal {
 	}
 	
 	static Node buildTree(String str) {
-		if(str.length() == 0 || str.charAt(0)=='N') return null;
+		if (str.length() == 0 || str.charAt(0)=='N') return null;
 		
-		String ip[] = str.split("\\s+");
+		String[] ip = str.split("\\s+");
 		Node root = new Node(Integer.parseInt(ip[0]));
 		Queue<Node> queue = new LinkedList<>();
 		queue.add(root);
 		
 		int i = 1;
-		while (queue.size() > 0 && i < ip.length) {
+		while (!queue.isEmpty() && i < ip.length) {
 			
 			Node currNode = queue.poll();
 			
 			String currVal = ip[i];
 			
-			if(!currVal.equals("N")) {
+			if (!currVal.equals("N")) {
 				currNode.left = new Node(Integer.parseInt(currVal));
 				queue.add(currNode.left);
 				
 			}
 			i++;
 			
-			if(i >= ip.length) break;
+			if (i >= ip.length) break;
 			
 			currVal = ip[i];
-			if(!currVal.equals("N")) {
+			if (!currVal.equals("N")) {
 				currNode.right = new Node(Integer.parseInt(currVal));
 				queue.add(currNode.right);
 			}

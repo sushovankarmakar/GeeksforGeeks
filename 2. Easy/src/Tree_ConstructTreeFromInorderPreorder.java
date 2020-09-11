@@ -8,22 +8,25 @@ import java.util.Map;
 // https://www.techiedelight.com/construct-binary-tree-from-inorder-postorder-traversals/
 // https://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
 // https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
-// https://www.youtube.com/watch?v=FBpQEQkQ1No
+// https://www.youtube.com/watch?v=PoBGyrIWisE (Theory part)
+// https://www.youtube.com/watch?v=FBpQEQkQ1No (BEST VIDEO)
 
 // time complexity : O(n),  space complexity : O(n) due to hashmap
 
 public class Tree_ConstructTreeFromInorderPreorder {
-	
-	static Map<Integer, Integer> inOrderValueIndicesMap = new HashMap<>();
-	static int preOrderIndex = 0;
 
-	private static Node buildTree (int[] preOrder, int[] inOrder) {
+	private static Map<Integer, Integer> inOrderValueIndicesMap = new HashMap<>();
+	private static int preOrderIndex = 0;
+
+	private static Node buildTree(int[] preOrder, int[] inOrder) {
 		for (int i = 0; i < inOrder.length; i++) {
 			inOrderValueIndicesMap.put(inOrder[i], i);
 		}
-		preOrderIndex = 0;	// making the static index = 0 for next test cases. or it will give ArrayIndexOutOfBoundException
 
-		return build(preOrder, inOrder, 0, inOrder.length-1);
+		/*making the static index = 0 for next test cases. or it will give ArrayIndexOutOfBoundException*/
+		preOrderIndex = 0;	/* we start from the end cause in preOrder, root resides at the start */
+
+		return build(preOrder, inOrder, 0, inOrder.length - 1);
 	}
 	
 	private static Node build(int[] preOrder, int[] inOrder, int inOrderStartIndex, int inOrderEndIndex) {
@@ -35,15 +38,18 @@ public class Tree_ConstructTreeFromInorderPreorder {
 		if(rootNode == null || inOrderStartIndex == inOrderEndIndex) return rootNode;
 		
 		int inOrderIndex = inOrderValueIndicesMap.get(rootNode.data);
-		
-		rootNode.left =	build(preOrder, inOrder, inOrderStartIndex, inOrderIndex-1);
-		rootNode.right = build(preOrder, inOrder, inOrderIndex+1, inOrderEndIndex);
+
+		/* In case of PreOrder and InOrder, we will first construct left child and then right child
+		 * In case of PostOrder and InOrder, we will first construct right child and then left child */
+
+		rootNode.left =	build(preOrder, inOrder, inOrderStartIndex, inOrderIndex - 1);
+		rootNode.right = build(preOrder, inOrder, inOrderIndex + 1, inOrderEndIndex);
 		
 		return rootNode;
 	}
 	
 	private static void printPostOrder(Node root) {
-		if(root == null) return;
+		if (root == null) return;
 		
 		printPostOrder(root.left);
 		printPostOrder(root.right);
@@ -63,7 +69,7 @@ public class Tree_ConstructTreeFromInorderPreorder {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine().trim());
-		while(t-->0) {
+		while (t-- > 0) {
 			int n = Integer.parseInt(br.readLine().trim());
 			String[] ip1 = br.readLine().trim().split("\\s+");
 			String[] ip2 = br.readLine().trim().split("\\s+");

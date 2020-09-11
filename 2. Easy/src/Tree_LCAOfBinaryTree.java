@@ -7,7 +7,7 @@ import java.util.Queue;
 // https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 // https://www.youtube.com/watch?v=13m9ZCB8gjw (BEST VIDEO - Short one to understand)
-// https://www.youtube.com/watch?v=py3R23aAPCA&t (BEST VIDEO - I followed this type of code)
+// https://www.youtube.com/watch?v=py3R23aAPCA (BEST VIDEO - I followed this type of code)
 // https://github.com/bephrem1/backtobackswe/blob/master/Trees%2C%20Binary%20Trees%2C%20%26%20Binary%20Search%20Trees/LowestCommonAncestorBinaryTree/LowestCommonAncestorBinaryTree.java
 // https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
 // https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1/ (Similar question)

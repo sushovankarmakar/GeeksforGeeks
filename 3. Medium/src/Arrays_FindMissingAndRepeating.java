@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
+// https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1
 // https://www.geeksforgeeks.org/find-the-repeating-and-the-missing-number-using-two-equations/
 // https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/ (VERY Important post)
 
@@ -98,6 +99,7 @@ class Arrays_FindMissingAndRepeating {
 		return new int[]{repeatedNum, missingNum};
 	}
 
+	/* Below two approaches won't work in case of numbers are very big */
 	private static int[] getMissingAndRepeatingNumber3(int[] arr, int n) {
 
 		int sumOfN = n * (n + 1) / 2;

@@ -43,9 +43,7 @@ public class Tree_TopViewOfBinaryTree {
                 TreeNode currNode = pair.node;
                 int horizontalDistance = pair.horizontalDistance;
 
-                if (treeMap.containsKey(horizontalDistance)) {
-                    treeMap.replace(horizontalDistance, currNode.data);
-                } else {
+                if (!treeMap.containsKey(horizontalDistance)) {
                     treeMap.put(horizontalDistance, currNode.data);
                 }
 

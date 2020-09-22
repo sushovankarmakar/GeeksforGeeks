@@ -26,17 +26,19 @@ public class LL_CloneLLWithNextAndRandomPtr {
 
     private static Node copyList(Node head) {
 
-        // FIRST PASS
+        /* FIRST PASS : Clone each node and link each original node to it's copy via the original node's next pointer */
         Node curr = head;
         while(curr != null) {
-            Node clone = new Node(curr.data);
+            Node clone = new Node(curr.data);   /* Create the copy node. */
             clone.next = curr.next;
             curr.next = clone;
             curr = clone.next;  // moving the current pointer forward
         }
 
-        // SECOND PASS
-        curr = head;
+        /* SECOND PASS : Assign clone the random mapping
+        * we'll use each original node's next value to map to the clone allowing us to reach the clone list. */
+
+        curr = head;    // Reset curr to the head of the original list.
         while (curr != null && curr.next != null) {
 
             if(curr.arb != null) {  // some node's arbitrary pointer may be null
@@ -45,8 +47,8 @@ public class LL_CloneLLWithNextAndRandomPtr {
             curr = curr.next.next; // moving the current pointer forward
         }
 
-        // THIRD PASS : Our goal is to restore the original list, and extract the copy list.
-        curr = head;
+        /* THIRD PASS : Our goal is to restore the original list, and extract the copy list. */
+        curr = head;    // First reset curr to the head of the original list.
         Node dummyHead = new Node(-1);
         Node cloneCurr = dummyHead;
 

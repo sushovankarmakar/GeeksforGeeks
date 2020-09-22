@@ -5,6 +5,7 @@ import java.util.*;
 // https://www.programcreek.com/2014/05/leetcode-meeting-rooms-ii-java/
 
 // https://www.lintcode.com/problem/meeting-rooms-ii/description
+// https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/ (Similar problem)
 
 public class Heap_MeetingRoom {
 

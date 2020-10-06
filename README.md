@@ -2,6 +2,7 @@
 Java solutions to all the problems solved by myself in GeeksForGeeks website. Keeping a daily dairy about problem solving.
 https://www.geeksforgeeks.org/
 
+* **06.10.2020** : 	[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) (*Easy*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/2.%20Easy/src/Arrays_PascalsTriangle.java)
 * **29.09.2020** : 	[Topological Sort](https://practice.geeksforgeeks.org/problems/topological-sort/1) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Graph_TopologicalSort.java)
 * **26.09.2020** : 	[Next Permutation](https://practice.geeksforgeeks.org/problems/next-permutation/0) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Arrays_NextPermutation.java)
 * **25.09.2020** : 	[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) (*Medium*) : [Solution](https://github.com/sushovankarmakar/GeeksforGeeks/blob/master/3.%20Medium/src/Arrays_NonOverlappingIntervals.java)
